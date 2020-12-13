@@ -182,7 +182,7 @@ data = get_row_data()
 
 sample='FaucetHandle'
 
-def make_figure(id_sample):
+def make_figure(id_sample, name):
     # make sunburst
 	sb1 = px.sunburst(data, path=['Domaine','Embranchement','Classe','Ordre','Famille','Genre'], 
                       values=round((data[str(id_sample)+"1"]/sum(data[str(id_sample)+"1"]))*100,2),
@@ -217,7 +217,10 @@ def make_figure(id_sample):
 
 	fig = go.Figure(data = [trace1, trace2], layout = layout)
 	fig.update_traces(textinfo='label+percent entry')
-	fig.write_image('fig/sunbrust.png')
+	fig.write_image('fig/{}'.format(name))
 
-make_figure(sample)
+make_figure(sample, "sunburst1.png")
+
+sample = "ToiletSeat"
+make_figure(sample, "sunburst2.png")
 
