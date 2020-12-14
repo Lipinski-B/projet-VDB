@@ -1,0 +1,12 @@
+matplotlib
+numpy
+pandas
+seaborn
+scipy
+plotly
+jupyter_dash
+dash
+dash_core_components
+dash_html_components
+ipywidgets
+sklearn
