@@ -4,5 +4,5 @@ METHODE :
 
 _Jupyter Notebook : fichier projet.ipynb
 
-_Outils/Package nécessaire : Avoir pip d'installé et utiliser le fichier requirement.txt avec. sudo apt-get install pip ; python -m pip install -r requirement.txt --user
+_Outils/Package nécessaire : Avoir python3, pip et jupyter d'installé et utiliser le fichier requirement.txt avec. python -m pip install -r requirement.txt --user
 
